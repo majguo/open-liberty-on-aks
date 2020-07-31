@@ -1,4 +1,4 @@
-# Open Liberty on Azure Kubernetes Service cluster Samples
+# Open Liberty on Azure Kubernetes Service Samples
 
 ## Overview
 
