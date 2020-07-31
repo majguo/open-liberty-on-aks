@@ -1,0 +1,36 @@
+apiVersion: openliberty.io/v1beta1
+kind: OpenLibertyApplication
+metadata:
+  name: javaee-cafe-aad-oidc
+  namespace: open-liberty-demo
+spec:
+  replicas: 1
+  # Note: replace "${Your_DockerHub_Account}" with your Docker Hub account name
+  applicationImage: docker.io/${Your_DockerHub_Account}/javaee-cafe-aad-oidc:1.0.0
+  service:
+    type: LoadBalancer
+    port: 9443
+    certificateSecretRef: tls-crt-secret
+  env:
+  - name: KEY_ALIAS
+    value: 'defaultkeystore'
+  - name: CLIENT_ID
+    valueFrom:
+      secretKeyRef:
+        name: aad-oidc-secret
+        key: client.id
+  - name: CLIENT_SECRET
+    valueFrom:
+      secretKeyRef:
+        name: aad-oidc-secret
+        key: client.secret
+  - name: TENANT_ID
+    valueFrom:
+      secretKeyRef:
+        name: aad-oidc-secret
+        key: tenant.id
+  - name: ADMIN_GROUP_ID
+    valueFrom:
+      secretKeyRef:
+        name: aad-oidc-secret
+        key: admin.group.id
