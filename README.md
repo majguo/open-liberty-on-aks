@@ -12,6 +12,7 @@ Below table shows the list of samples available in this repository.
 
 | Sample                           | Description                                | Guide                            |
 |----------------------------------|--------------------------------------------|----------------------------------|
+| [`open-liberty-operator-0.7.0`](https://github.com/majguo/open-liberty-on-aks/tree/master/open-liberty-operator-0.7.0) | Deploy Open Liberty Operator to an AKS cluster | [README.md](https://github.com/majguo/open-liberty-on-aks/tree/master/open-liberty-operator-0.7.0) |
 | [`2-simple`](https://github.com/majguo/open-liberty-on-aks/tree/master/2-simple) | Deploy a simple Java EE application running on Open Liberty server to an AKS cluster. | TODO |
 | [`3-integration/aad-oidc`](https://github.com/majguo/open-liberty-on-aks/tree/master/3-integration/aad-oidc) | Extend [`2-simple`](https://github.com/majguo/open-liberty-on-aks/tree/master/2-simple) sample by integrating with Azure Active Directory OpenID Connect for security. | TODO |
 | [`3-integration/connect-db`](https://github.com/majguo/open-liberty-on-aks/tree/master/3-integration/connect-db) | Extend [`2-simple`](https://github.com/majguo/open-liberty-on-aks/tree/master/2-simple) sample by integrating with Azure managed databases for data persistence. | TODO |
