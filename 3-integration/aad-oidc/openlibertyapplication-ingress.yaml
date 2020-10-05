@@ -1,16 +1,15 @@
 apiVersion: openliberty.io/v1beta1
 kind: OpenLibertyApplication
 metadata:
-  name: javaee-cafe-aad-oidc
+  name: javaee-cafe-aad-oidc-ingress
   namespace: open-liberty-demo
 spec:
   replicas: 1
   # Note: replace "${Your_DockerHub_Account}" with your Docker Hub account name
   applicationImage: docker.io/${Your_DockerHub_Account}/javaee-cafe-aad-oidc-ingress:1.0.0
   service:
-    type: LoadBalancer
-    port: 9443
-    certificateSecretRef: tls-crt-secret
+    type: ClusterIP
+    port: 9080
   env:
   - name: CLIENT_ID
     valueFrom:
@@ -32,3 +31,18 @@ spec:
       secretKeyRef:
         name: aad-oidc-secret
         key: admin.group.id
+  initContainers:
+  - name: add-hostname
+    image: busybox
+    command: ['sh', '-c', 'cp /etc/hosts /hostsconfig && echo "${INGRESS_IP_ADDRESS} ${DOMAIN_NAME}" >> /hostsconfig/hosts']
+    volumeMounts:
+    - name: hostsconfig
+      mountPath: /hostsconfig
+  volumeMounts:
+  - name: hostsconfig
+    mountPath: /etc/hosts
+    readOnly: true
+    subPath: hosts
+  volumes:
+  - name: hostsconfig
+    emptyDir: {}
