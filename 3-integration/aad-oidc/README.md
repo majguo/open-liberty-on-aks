@@ -10,7 +10,8 @@
    kubectl create namespace open-liberty-demo
    ```
 
-4. Set up Azure Active Directory by completing this [section](https://github.com/Azure-Samples/open-liberty-on-aro/blob/master/guides/howto-integrate-aad-oidc.md#set-up-azure-active-directory).
+4. Follow this [section](https://docs.microsoft.com/azure/aks/ingress-own-tls#create-an-ingress-controller) if you want to **Create an ingress controller** on the AKS cluster. Please replace **ingress-basic** with **open-liberty-demo** for the namespace used.
+5. Set up Azure Active Directory by completing this [section](https://github.com/Azure-Samples/open-liberty-on-aro/blob/master/guides/howto-integrate-aad-oidc.md#set-up-azure-active-directory).
 
 ## Deployment
 
