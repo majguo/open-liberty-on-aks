@@ -6,7 +6,7 @@ metadata:
 spec:
   replicas: 1
   # Note: replace "${Your_DockerHub_Account}" with your Docker Hub account name
-  applicationImage: docker.io/${Your_DockerHub_Account}/javaee-cafe-aad-oidc-ingress:1.0.0
+  applicationImage: docker.io/${Your_DockerHub_Account}/javaee-cafe-aad-oidc:1.0.0
   service:
     type: LoadBalancer
     port: 9443
