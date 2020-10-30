@@ -8,13 +8,10 @@ spec:
   replicas: ${REPLICAS}
   # Note: replace "${Your_DockerHub_Account}" with your Docker Hub account name
   applicationImage: docker.io/${Your_DockerHub_Account}/javaee-cafe-session-persistence-db:1.0.0
-  pullPolicy: Always  
   service:
     type: LoadBalancer
     port: 9080
   env:
-  - name: WLP_LOGGING_CONSOLE_FORMAT
-    value: SIMPLE  
   - name: SHOW_HOST_NAME
     value: 'true'
   - name: DB_SERVER_NAME
