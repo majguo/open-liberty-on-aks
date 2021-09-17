@@ -14,9 +14,7 @@ Below table shows the list of samples available in this repository.
 |----------------------------------|--------------------------------------------|----------------------------------|
 | [`open-liberty-operator-0.7.0`](open-liberty-operator-0.7.0) | Install Open Liberty Operator on an AKS cluster | [README.md](open-liberty-operator-0.7.0/README.md) |
 | [`2-simple`](2-simple) | Deploy a simple Java EE application running on Open Liberty server to an AKS cluster. | [README.md](2-simple/README.md) |
-| [`3-integration/aad-oidc`](3-integration/aad-oidc) | Extend [`2-simple`](2-simple) sample by integrating with Azure Active Directory OpenID Connect for security. | TODO |
+| [`3-integration/aad-oidc`](3-integration/aad-oidc) | Extend [`2-simple`](2-simple) sample by integrating with Azure Active Directory OpenID Connect for security. | [README.md](3-integration/aad-oidc/README.md) |
 | [`3-integration/connect-db`](3-integration/connect-db) | Extend [`2-simple`](2-simple) sample by integrating with Azure managed databases for data persistence. | TODO |
 | [`3-integration/elk-logging`](3-integration/elk-logging) | Extend [`2-simple`](2-simple) sample by integrating with Elasticsearch stack for distributed logging. | TODO |
 | [`4-finish`](4-finish) | A complete sample with all services integration including security, data persistence & distributed logging. | TODO |
-
-**NOTE**: Refer to the relative folder of repo [Azure-Samples/open-liberty-on-aro](https://github.com/Azure-Samples/open-liberty-on-aro) if you want to see the sample code.

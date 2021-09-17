@@ -10,7 +10,7 @@
    kubectl create namespace open-liberty-demo
    ```
 
-4. If you haven't pushed image `javaee-cafe-simple:1.0.0` to repositories of your personal DockerHub account, follow the relative instructions [here](https://github.com/Azure-Samples/open-liberty-on-aro/blob/master/guides/howto-deploy-java-openliberty-app.md#deploy-application-on-aro-4-cluster) to complete this step.
+4. If you haven't pushed image `javaee-cafe-simple:1.0.0` to repositories of your personal DockerHub account, follow the relative instructions [here](https://github.com/Azure-Samples/open-liberty-on-aro/blob/master/guides/howto-deploy-java-liberty-app.md#deploy-application-on-aro-4-cluster) to complete this step.
 
 ## Deployment
 
