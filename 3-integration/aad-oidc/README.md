@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-1. If you haven't created an AKS cluster and installed Open Liberty Operator on it, follow instructions [here](../open-liberty-operator-0.7.1/README.md) to complete these steps.
+1. If you haven't created an AKS cluster and installed Open Liberty Operator on it, follow instructions [here](../../open-liberty-operator-0.7.1/README.md) to complete these steps.
 2. Follow tutorial [Connect to the cluster](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) to connect to the AKS cluster.
 3. If you haven't created namespace `open-liberty-demo`, follow the instructions below to create it:
 
