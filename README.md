@@ -12,7 +12,7 @@ Below table shows the list of samples available in this repository.
 
 | Sample                           | Description                                | Guide                            |
 |----------------------------------|--------------------------------------------|----------------------------------|
-| [`open-liberty-operator-0.7.0`](open-liberty-operator-0.7.0) | Install Open Liberty Operator on an AKS cluster | [README.md](open-liberty-operator-0.7.0/README.md) |
+| [`open-liberty-operator-0.7.1`](open-liberty-operator-0.7.1) | Install Open Liberty Operator on an AKS cluster | [README.md](open-liberty-operator-0.7.1/README.md) |
 | [`2-simple`](2-simple) | Deploy a simple Java EE application running on Open Liberty server to an AKS cluster. | [README.md](2-simple/README.md) |
 | [`3-integration/aad-oidc`](3-integration/aad-oidc) | Extend [`2-simple`](2-simple) sample by integrating with Azure Active Directory OpenID Connect for security. | [README.md](3-integration/aad-oidc/README.md) |
 | [`3-integration/connect-db`](3-integration/connect-db) | Extend [`2-simple`](2-simple) sample by integrating with Azure managed databases for data persistence. | TODO |
