@@ -4,6 +4,7 @@ metadata:
   # Note:
   # - replace "${DB_Type}" with "mssql" for testing DB connection with Azure SQL
   # - replace "${DB_Type}" with "postgres" for testing DB connection with Azure Database for PostgreSQL
+  # - replace "${DB_Type}" with "mariadb" for testing DB connection with Azure Database for MariaDB
   name: javaee-cafe-connect-db-${DB_Type}
   namespace: open-liberty-demo
 spec:
@@ -12,6 +13,7 @@ spec:
   # - replace "${Your_DockerHub_Account}" with your Docker Hub account name
   # - replace "${Image_Name}" with "javaee-cafe-connect-db-mssql" for testing DB connection with Azure SQL
   # - replace "${Image_Name}" with "javaee-cafe-connect-db-postgres" for testing DB connection with Azure Database for PostgreSQL
+  # - replace "${Image_Name}" with "javaee-cafe-connect-db-mariadb" for testing DB connection with Azure Database for MariaDB
   applicationImage: docker.io/${Your_DockerHub_Account}/${Image_Name}:1.0.0
   service:
     type: LoadBalancer
@@ -19,6 +21,7 @@ spec:
   # Note:
   # - replace "${DB_Type}" with "mssql" for testing DB connection with Azure SQL
   # - replace "${DB_Type}" with "postgres" for testing DB connection with Azure Database for PostgreSQL
+  # - replace "${DB_Type}" with "mariadb" for testing DB connection with Azure Database for MariaDB
   env:
   - name: DB_SERVER_NAME
     valueFrom:
